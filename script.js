@@ -17,6 +17,9 @@ const carritocard=document.querySelector('.carritocard');
 const tcarrito=document.querySelector('.tcarrito');
 const carrobtn=document.querySelectorAll('.carrobtn');
 const total=document.getElementById('total');
+const comprar=document.getElementById('comprar');
+const vaciar=document.getElementById('vaciar');
+const finalizar=document.getElementById('finalizar');
 
 // Setear el array para el carro
 let alcarro = JSON.parse(localStorage.getItem("alcarro")) || [];
@@ -407,8 +410,9 @@ const sacardelcarro=(idproduc)=>{
 const descontarcantidad=(idproduc)=>{
 
   if(alcarro.find(p=>p.id==idproduc).cantidad===1){
+    if(window.confirm("¿Desea elimiar este producto?")){
     sacardelcarro(idproduc);
-    
+    }
   }
   else{
     alcarro.find(p=>p.id==idproduc).cantidad--;
@@ -419,10 +423,12 @@ const descontarcantidad=(idproduc)=>{
 
 const addProduct =(e)=>{
   if (!e.target.classList.contains("carritobtn")) return;
+    if( window.confirm("¿Desea agregar este producto?")){
   const idproduc= e.target.id;
   
   sumarcantidad(idproduc);
   checkCartState();
+}
 }
 // -----------render carrito
 const rendercarrocart = cart =>{
@@ -450,18 +456,22 @@ const carrobtns =(e)=>{
   
    if(e.target.dataset.carrobtn==="masproduct"){
     
+    
      sumarcantidad(e.target.id);
-     
+    
   //   console.log(e.target.dataset.carritobtn);
 
    }
    if(e.target.dataset.carrobtn==="menosproduct"){
-     
+    
+    
      descontarcantidad(e.target.id);
+    
    }
   if(e.target.dataset.carrobtn==="deletebtn"){
+    if(window.confirm("¿Desea elimiar este producto?")){
     sacardelcarro(e.target.id);
-  }
+  }}
   checkCartState();
 }
 
@@ -471,11 +481,41 @@ const totalcarro=()=>{
 const showTotal = () => {
   total.innerHTML = `<h3>TOTAL      $${totalcarro().toFixed(2)} </h3>`;
 };
+const estadocarro =()=>{
+  if(alcarro.length==0){
+    finalizar.classList.add('sinElementos');
+    
 
+  }
+  else{
+    finalizar.classList.remove('sinElementos');
+  }
+  
+}
 const checkCartState = () => {
   showTotal();
   saveLocalStorage(alcarro);
+  rendercarro(alcarro);
+  estadocarro();
 }
+const completeCartAction = (confirmMsg, successMsg) => {
+  if (!alcarro.length) return;
+  if (window.confirm(confirmMsg)) {
+   alcarro=[];
+   alert(successMsg);
+   checkCartState();
+  }
+};
+const comprarcarro = () => {
+  completeCartAction("¿Desea completar su compra?", "¡Gracias por su compra!");
+};
+
+const vaciarcarro = () => {
+  completeCartAction(
+    "¿Desea vaciar el carrito?",
+    "No hay productos en el carrito"
+  );
+};
 
 const init=()=>{
 barmenu.addEventListener("click",openmenu);
@@ -489,8 +529,11 @@ carro.addEventListener("click",carrobtns);
 siguiente.addEventListener("click",subirPagina);
 anterior.addEventListener("click",bajarPagina);
 cardContainer.addEventListener("click",addProduct);
-document.addEventListener("DOMContentLoaded", showTotal);
-document.addEventListener("DOMContentLoaded", rendercarro(alcarro));
+//document.addEventListener("DOMContentLoaded", showTotal);
+//document.addEventListener("DOMContentLoaded", rendercarro(alcarro));
+comprar.addEventListener("click", comprarcarro);
+vaciar.addEventListener("click", vaciarcarro);
+checkCartState ();
 }
 
 init();

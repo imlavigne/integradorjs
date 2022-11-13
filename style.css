@@ -179,3 +179,33 @@ text-align: left;
 .vistacarro td {
 padding: 12px 15px; 
 }
+.finalizarbtn{
+    display: flex;
+    flex-direction: row;
+   gap: 10rem;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   /* background-color: aqua; */
+    
+}
+.finalizarbtn input{
+    padding: 6px;
+    background-color: crimson;
+    color: white;
+    border-radius: 10%;
+    width: 250px;
+}
+.finalizarbtn input:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.sinElementos input{
+    background-color: gray;
+}
+
+.sinElementos input:hover{
+    transform: none;
+    cursor: not-allowed;
+    
+}
