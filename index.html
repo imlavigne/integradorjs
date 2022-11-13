@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEQUES</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="header">
+    <div class="headercontainer">
+        <!-- //barra menu -->
+    <div id="menu_label"> 
+    <i class="fa-solid fa-bars " id="barmenu"></i>
+    
+    <ul class="navbar hidden" id="navbarlist">
+        <div class="menu">
+        <h4>MENU</h4>
+        <i class="fa-solid fa-xmark xmenu" id="xmenu"></i>
+      </div>  
+      <div class="navbar-list">
+      <li class="category">Todo</li>
+      <li class="category" data-category="Accesorios">Accesorios</li>
+        <li class="category" data-category="Bermudas">Bermudas</li>
+        <li class="category" data-category="Buzos">Buzos</li>
+        <li class="category" data-category="Remeras">Remeras</li>
+        <li class="category" data-category="Zapatillas">Zapatillas</li>
+      </div>  
+      </ul>
+
+    </div>
+    <!-- //user -->
+    <h2>PEQUES</h2>
+    <div class="login_carro">
+    <i class="fa-solid fa-user"></i>
+    
+     <!-- carrito    -->
+     <!-- <div id="carritocontainer"> -->
+    <i class="fa-solid fa-cart-shopping" id="carrito"></i>
+     <!-- </div> -->
+    
+     <div class="carro hidden" id="carro">
+       <div class="carrocabezal"> 
+     <h4>TU CARRITO</h4>
+     <i class="fa-solid fa-xmark xmenu" id="xcarro"></i>
+     </div>
+     <hr>
+     <div class="carritocard">
+      <table class="vistacarro">
+      <thead >
+        <tr >
+          <th>Producto</th>
+          <th>precio</th>
+          <th>Cantidad</th>
+          <th>Sub total</th>
+          <th> Eliminar</th>
+          </tr>
+      </thead>
+      <tbody class="tcarrito">
+         <!--<tr>
+          <td><img src="./imagenes/accesorio_5.webp" alt="" /></td>
+          <td>20</td>
+          <td><button>2 </button></td>
+          <td>20</td>
+          <td>  <i class="fa-solid fa-trash-can"></i></td> 
+          </tr> -->
+      </tbody>
+     
+      </table>
+      
+      
+      <h2 id="total"> </h2>
+         
+      </div>
+    </div>
+    </div>
+    </div>
+    </header>
+    <div class="card-container" id="card-container">
+       
+     
+    </div>
+    <div class="paginacion ">
+      <button id="anterior" class="paginas"><<</button>
+      <button id="actual" class="npagina"></button>
+      <button id="siguiente" class="paginas">>></button>
+      </div>  
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

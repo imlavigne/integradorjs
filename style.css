@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  
+    
+}
+
+.navbar{
+    background-color:white ;
+    position:absolute;
+    top:0;
+    left: 0px;
+    height: 80vh;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+.navbar-list li{
+    display: flex;
+    flex-direction: column;
+    align-items:initial;
+    margin: 1rem;
+}
+
+.hidden{
+    display: none;
+    
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.1rem;
+    /* background-color: red; */
+}
+.menu h4{
+    color:darkgray;
+}
+.headercontainer
+{
+    
+    display: flex;
+    width: 100%;
+    margin: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+    align-items: center;
+    background-color: bisque;
+    position: sticky;
+  top: 0%;
+  z-index: 9999;
+  
+}
+.card-container{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5rem;
+    margin-top: 2rem;
+    max-width: 1000px;
+    
+}
+.cart img{
+    width: 250px;
+    background-color: red;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carritobtn{
+    background-color: crimson;
+    color: white;
+    width: 90%;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 8%;
+    font-family: 'Macondo';
+}
+.carritobtn:hover{
+    background-color: white;
+    color: crimson;
+}
+.login_carro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.carro{
+    position: absolute;
+    background-color:white ;
+    top:0;
+    right: 0px;
+    height: 100vh;
+    width: 50%;
+ 
+}
+.carro h4{
+    font-size: small;
+    color: grey;
+}
+
+.carrocabezal{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.category:hover {
+    transform: scale(1.5); 
+}
+.paginacion{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3.5rem;
+    
+}
+.paginacion button{
+    width: 50px;
+    height: 20px;
+    
+    border-radius: 10%;
+}
+.paginas{
+    background-color: crimson;
+}
+.paginas:hover{
+    transform: scale(1.5); 
+}
+.hidden{
+    display: none;
+    
+}
+
+.vistacarro img{
+    width: 100px;
+    margin: auto;
+} 
+.vistacarro{
+border-collapse: collapse;
+margin: 25px 0;
+font-size: 0.9rem;
+min-width: 400px;
+max-width: 1200px;
+width: 100%;
+}
+
+.vistacarro thead tr {
+
+text-align: left;
+}
+.vistacarro th,
+.vistacarro td {
+padding: 12px 15px; 
+}
