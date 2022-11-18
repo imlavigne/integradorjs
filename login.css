@@ -92,7 +92,7 @@
     align-items: center;
     max-width: 400px;
     width: 95%;
-    max-height: 800px;
+    max-height: 1000px;
     height: 50%;
     min-height:300px ;
     /* height: 100vh; */
@@ -118,9 +118,7 @@
     /* background-color: aqua; */
 
    }
-   .login-container i{
-    display: none;
-   }
+  
    .btnsubmit{
     width: 250px;
    }
