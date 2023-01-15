@@ -7,6 +7,7 @@
     <title>PEQUES</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -19,7 +20,7 @@
     
     <ul class="navbar hidden" id="navbarlist">
         <div class="menu">
-        <h4>MENU</h4>
+        <h4>PRODUCTOS</h4>
         <i class="fa-solid fa-xmark xmenu" id="xmenu"></i>
       </div>  
       <div class="navbar-list">
@@ -92,22 +93,72 @@
       <button id="actual" class="npagina"></button>
       <button id="siguiente" class="paginas">>></button>
       </div>  
-      <!-- fotter---------- -->
-      <footer>
-        <h3>BUSCANOS</h3>
-        <div class="foter">
-        <div class="redes">
-        <a href="https://www.instagram.com/strikehym/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.instagram.com/strikehym/"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
-        <div class="telefono">
-          <i class="fa-solid fa-phone"> 123456789</i>
-          
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.568375177094!2d-58.2816656165385!3d-34.71015568389329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a331fdc70bdd5d%3A0x6c702cf3f15dabac!2sBernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1657910826965!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        </div>
-        <p> Hecho por Ignacio Lavigne </p>
-      </footer>
+      <!-- contactos -->
+  <div class="contactoContainer item">
+    <h2>DEJANOS TU MENSAJE</h2>
+    <div class="contacto">
+        <div class="input">
+            <label for="nombre">Nombre: </label>
+            <input type="text" placeholder="INGRESE SU NOMBRE">
+     </div>
+     <div class="input">
+            <label >Email:</label>
+            <input type="email" placeholder="INGRESE SU EMAIL">
+    </div>
+    <div class="input">
+            <label>Consulta:</label>
+            <textarea placeholder="INGRESE SU CONSULTA"></textarea>
+    </div>
+     <input type="submit" value="ENVIAR"> 
+  </div>
+  </div>
+</div>
+   <!-- ponemos el logo de whatsapp -->
+   <a href="https://api.whatsapp.com/send?phone=5491161467411&text=" class="whatsapp"> 
+    <i class="fab fa-whatsapp"></i>  
+</a>
+<footer class="footerContainer">
+  <div class="informacion">
+    <div class="footer">
+        <h2>INSTITUCIONAL</h2>
+        <ul>
+            <li>¿Quienes somos?</li>
+            <li>Politicas de Calidad</li>
+            <li>Terminos y condiciones</li>
+            <li>Politicas de Privacidad</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <h2>DUDAS</h2>
+        <ul>
+            <li>¿Como comprar?</li>
+            <li>Cambios y devoluciones</li>
+            <li>Forma de pago</li>
+            <li>Zonas de entrega</li>
+        </ul>
+    </div>
+  </div>
+  <div class="informacion">
+    <div class="footer">
+        <h2>ATENCION AL CLIENTE</h2>
+        <ul>
+          <li>  <i class="fa-solid fa-phone">  111512151611</i></li>
+          <li>  <i class="fa-regular fa-envelope"> peques@peques.com</i></li>
+        </ul>
+    </div>
+    <div class="footer">
+        <h2>SEGUINOS EN:</h2>
+        <ul>
+          <a href="https://www.instagram.com/unomas_petfood/"> <li class="redes"> <i class="fa-brands fa-instagram" ></i></a>
+            <!-- <i class="fa-brands fa-facebook"></i> -->
+           </li>
+        </ul>
+    </div>
+  </div>
+    <p>hecho con ❤ por el Ignacio Lavigne❤</p>
+</footer> 
+     
     
 
     <script src="./script.js"></script>

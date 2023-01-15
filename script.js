@@ -519,7 +519,7 @@ const vaciarcarro = () => {
 
 const init=()=>{
 barmenu.addEventListener("click",openmenu);
-xmenu.addEventListener("click",closeMenu);
+ xmenu.addEventListener("click",closeMenu);
 rendercarts(productsController.dividedProducts[0]);
 carrito.addEventListener("click",abrircarro);
 xcarro.addEventListener("click",closecarro);
