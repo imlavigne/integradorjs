@@ -440,7 +440,7 @@ const rendercarrocart = cart =>{
    <td>$${price}</td>
    <td ><button class="carrobtn" data-carrobtn="masproduct" id="${id}">+</button>${cantidad}<button class="carrobtn" data-carrobtn="menosproduct" id="${id}">-</button> </td>
    <td>$${price*cantidad}</td>
-   <td>  <i class="fa-solid fa-trash-can carrobtn" data-carrobtn="deletebtn" id="${id}"></i></td> 
+   <td class="eliminar">  <i class="fa-solid fa-trash-can carrobtn" data-carrobtn="deletebtn" id="${id}"></i></td> 
    </tr>
    
   `
