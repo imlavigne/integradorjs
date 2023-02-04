@@ -301,6 +301,7 @@ min-height: 100px;
     height: 80px;
     width: 80px;
   }
+  
   .footerContainer{
     background-color: bisque;
     display: flex;
@@ -308,8 +309,9 @@ min-height: 100px;
     align-items: flex-start;
     justify-content: center;
     color: black;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 0.5rem;
+    padding: 1rem;
+
   }
   .footer{
     display: flex;
@@ -317,6 +319,7 @@ min-height: 100px;
     align-items:flex-start;
     justify-content: center;
     gap:0.5rem;
+    /* background-color: #168236; */
   }
   .footer li{
     font-size: 15px;
@@ -333,10 +336,32 @@ min-height: 100px;
     font-size: 15px;
     /* pepe */
   }
+  
+  .ofertas img{
+    width: 100vw;
+    background-color: #168236;
+    /* margin-top: 8px; */
+  }
+  .phone{
+    display: none;
+  }
+ 
+ 
+  
   @media  (max-width:1024px){
    body{
     
     max-width: 100vw;
+  }
+  .headercontainer{
+    width: 90%;
+  }
+.phone{
+  display: block;
+  /* width: 100%; */
+}
+.desktop{
+  display: none;
 }
 .carro{
     position: absolute;
@@ -344,6 +369,9 @@ min-height: 100px;
     max-width: 100%;
     height: 100vh;
     width: 100%;
+}
+.contactoContainer{
+  /* display: none; */
 }
 
 
@@ -375,14 +403,16 @@ max-width: 90%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 1rem;
+    max-height:500px ;
+    /* background-color: #168236; */
   }  
 .informacion{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
-    gap:20rem;
+    gap:2rem;
 }
 
 }

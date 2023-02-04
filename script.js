@@ -344,16 +344,7 @@ const filtrar = (e) => {
   else{
     let filtrado = productsdata.filter(p => p.category === categoriaselect)
 
-  //   // console.log(e.target.dataset.category);
-  //  let filtrado= [];
-  //   for (let i=0;i<productsdata.length;i++){
-  //     if(productsdata[i].category===categoriaselect){
-  //       filtrado.push(productsdata[i]);
-  //       // console.log(filtrado);
-  //            }
-  //     // console.log(filtrado); 
-  //   }
-  //     //  console.log(filtrado); 
+   
   paginacion.classList.add('hidden');
   rendercarts(filtrado);
   closeMenu();
