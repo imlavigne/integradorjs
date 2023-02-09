@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
@@ -86,8 +88,26 @@
     </header>
     <!-- spam -->
     <div class="ofertas">
-      <img class="desktop" src="./imagenes/promo/enviogratis.webp" alt="">
-      <img class="phone" src="./imagenes/promo/envioresponsive.png" alt="">
+      <div class="swiffy-slider">
+        <ul class="slider-container phone">
+            <li><img src="./imagenes/promo/schoolresponsive.png"></li>
+            <li><img src="./imagenes/promo/envioresponsive.png"></li>
+        </ul>
+        <ul class="slider-container desktop">
+          <li><img src="./imagenes/promo/enviogratis.jpg"></li>
+          <li><img src="./imagenes/promo/backtoschholdesktop.jpg"></li>
+      </ul>
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+    
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+      <!-- <img class="desktop" src="./imagenes/promo/enviogratis.webp" alt="">
+      <img class="phone" src="./imagenes/promo/envioresponsive.png" alt=""> -->
+    </div>
     </div>
     <!-- renderizar productos -->
     <div class="card-container" id="card-container">

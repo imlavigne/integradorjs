@@ -342,10 +342,12 @@ min-height: 100px;
     background-color: #168236;
     /* margin-top: 8px; */
   }
-  .phone{
+  .phone li{
     display: none;
   }
- 
+ .desktop li{
+  display: block;
+ }
  
   
   @media  (max-width:1024px){
@@ -356,11 +358,11 @@ min-height: 100px;
   .headercontainer{
     width: 90%;
   }
-.phone{
+.phone li{
   display: block;
   /* width: 100%; */
 }
-.desktop{
+.desktop li{
   display: none;
 }
 .carro{
