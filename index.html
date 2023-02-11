@@ -88,7 +88,8 @@
     </header>
     <!-- spam -->
     <div class="ofertas">
-      <div class="swiffy-slider">
+      
+      <!-- <div class="swiffy-slider">
         <ul class="slider-container phone">
             <li><img src="./imagenes/promo/schoolresponsive.png"></li>
             <li><img src="./imagenes/promo/envioresponsive.png"></li>
@@ -104,10 +105,17 @@
             <button class="active"></button>
             <button></button>
             <button></button>
-        </div>
-      <!-- <img class="desktop" src="./imagenes/promo/enviogratis.webp" alt="">
-      <img class="phone" src="./imagenes/promo/envioresponsive.png" alt=""> -->
-    </div>
+        </div> 
+    
+    </div>-->
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="5000" autoplay-disable-on-interaction="false">
+    <swiper-slide class="desktop"><img src="./imagenes/promo/enviogratis.jpg"></swiper-slide>
+    <swiper-slide class="desktop"><img src="./imagenes/promo/backtoschholdesktop.jpg"></swiper-slide>
+    <swiper-slide class="phone"><img src="./imagenes/promo/schoolresponsive.png"></swiper-slide>
+    <swiper-slide class="phone"><img src="./imagenes/promo/envioresponsive.png"></swiper-slide>
+    
+  </swiper-container>
     </div>
     <!-- renderizar productos -->
     <div class="card-container" id="card-container">
@@ -188,5 +196,7 @@
     
 
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
 </body>
 </html>
