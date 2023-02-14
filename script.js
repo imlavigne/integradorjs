@@ -507,7 +507,13 @@ const vaciarcarro = () => {
     "No hay productos en el carrito"
   );
 };
-
+//funcion para cerrar el menu y carrito cuando scrolea
+const onscroll =()=>{
+  if(!navbarlist.classList.contains('hidden') || !carro.classList.contains('hidden')){
+    closecarro();
+    closeMenu();
+  }
+}
 const init=()=>{
 barmenu.addEventListener("click",openmenu);
  xmenu.addEventListener("click",closeMenu);
@@ -525,6 +531,7 @@ cardContainer.addEventListener("click",addProduct);
 comprar.addEventListener("click", comprarcarro);
 vaciar.addEventListener("click", vaciarcarro);
 checkCartState ();
+window.addEventListener("scroll",onscroll);
 }
 
 init();
